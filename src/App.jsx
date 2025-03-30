@@ -20,8 +20,8 @@ function MiComponente() {
             <img src={running} alt="running photo" className="w-full sm:w-80" />
           </div>
         </div>
-        <div className="mt-12 mb-5 mx-auto text-center p-8 rounded-lg shadow-lg bg-gray-800">
-          <h3 className="text-white font-bold mb-2 text-2xl">Contacto</h3>
+        <div className="mt-12 mb-5 mx-auto text-center p-8 rounded-lg shadow-lg bg-gray-800 z-20">
+          <h3 className="text-white font-bold mb-2 text-2xl">Contacto</h3> 
           <p className="text-gray-300 mb-4">Celular: +56 9 3453450</p>
           <button
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
