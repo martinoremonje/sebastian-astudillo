@@ -51,7 +51,7 @@ function MiComponente() {
             <img src={running} alt="running photo" className="w-full sm:w-80" />
           </div>
         </div>
-        <div className="mt-12 mb-5 mx-auto text-center p-8 rounded-lg shadow-lg bg-gray-800 z-20">
+        <div data-aos="fade-left" className="mt-12 mb-5 mx-auto text-center p-8 rounded-lg shadow-lg bg-gray-800 z-20">
           <h3 className="text-white font-bold mb-2 text-2xl">Contacto</h3>
           <p className="text-gray-300 mb-4">Celular: +56 9 3453450</p>
           <button
