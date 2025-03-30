@@ -9,6 +9,9 @@ function MiComponente() {
   }, []);
 
   return (
+    
+    <>
+    
     <div className="bg-gray-900 min-h-screen flex flex-col sm:flex-row items-center justify-center relative">
       <div data-aos="fade-up" className="p-8 sm:p-12 rounded-xl shadow-2xl z-10 w-full sm:w-4/5 max-w-3xl">
         <h1 className="text-4xl sm:text-5xl text-white text-center mb-6">Sebastian Astudillo</h1>
@@ -31,8 +34,10 @@ function MiComponente() {
           Enviar correo por Outlook
         </button>
       </div>
-      <div className="absolute inset-px border-4 border-green-400 neon-border rounded-lg z-0"></div>
+      
     </div>
+    <div className="absolute inset-px border-4 border-green-400 neon-border rounded-lg z-0"></div>
+    </>
   );
 }
 
