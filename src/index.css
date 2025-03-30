@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.neon-border {
+  border-color: #39db1c;
+  box-shadow: 0 0 40px 15px rgba(57, 255, 20, 0.9), 0 0 80px 30px rgba(57, 255, 20, 0.7);
+}
