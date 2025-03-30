@@ -10,7 +10,6 @@ function MiComponente() {
 
   return (
     <div className="bg-gray-900 min-h-screen flex flex-col sm:flex-row items-center justify-center relative">
-      {/* Div de saludo y contenido principal */}
       <div data-aos="fade-up" className="p-8 sm:p-12 rounded-xl shadow-2xl z-10 w-full sm:w-4/5 max-w-3xl">
         <h1 className="text-4xl sm:text-5xl text-white text-center mb-6">Sebastian Astudillo</h1>
         <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-8 overflow-hidden">
@@ -20,20 +19,19 @@ function MiComponente() {
           <img src={running} alt="running photo" className="w-full sm:w-80" />
         </div>
       </div>
-
-      {/* Div de contacto */}
-      <div className="mt-12 w-full sm:w-1/2 max-w-md mx-auto text-center p-8 rounded-lg shadow-lg bg-gray-800">
+      <div className="mt-12 w-full sm:w-1/2 max-w-md mx-auto text-center p-8 rounded-lg shadow-lg bg-gray-800 z-20">
         <h3 className="text-white font-bold mb-2 text-2xl">Contacto</h3>
         <p className="text-gray-300 mb-4">Celular: +56 9 3453450</p>
-        <a
-          href="mailto:tuemail@outlook.com"
+        <button
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          onClick={() => {
+            window.location.href = 'mailto:tuemail@outlook.com';
+          }}
         >
           Enviar correo por Outlook
-        </a>
+        </button>
       </div>
-
-      <div className="absolute inset-px border-4 border-green-400 neon-border rounded-lg"></div>
+      <div className="absolute inset-px border-4 border-green-400 neon-border rounded-lg z-0"></div>
     </div>
   );
 }
