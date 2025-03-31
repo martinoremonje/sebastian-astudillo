@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion, AnimatePresence } from 'framer-motion';
+import FormEmail from '../src/components/FormEmail'
 
 function MiComponente() {
   const headingText = 'Sebastian Astudillo';
@@ -54,14 +55,7 @@ function MiComponente() {
         <div data-aos="fade-left" className="mt-12 mb-5 mx-auto text-center p-8 rounded-lg shadow-lg bg-gray-800 z-20">
           <h3 className="text-white font-bold mb-2 text-2xl">Contacto</h3>
           <p className="text-gray-300 mb-4">Celular: +56 9 3453450</p>
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-            onClick={() => {
-              window.location.href = 'mailto:tuemail@outlook.com';
-            }}
-          >
-            Enviar correo por Outlook
-          </button>
+          <FormEmail/>
         </div>
         <div className="absolute inset-0 border-4 border-green-400 neon-border rounded-lg z-0"></div>
       </div>
